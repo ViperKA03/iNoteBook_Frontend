@@ -1,0 +1,144 @@
+/* styles.css */
+
+body {
+    background: url('/public/wood-texture.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Modal styling */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    border-bottom: none;
+    background-color: #f7f7f7;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-title {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #5d4037;
+}
+
+.modal-footer {
+    border-top: none;
+    background-color: #f7f7f7;
+    border-radius: 0 0 10px 10px;
+}
+
+.btn-primary {
+    background-color: #795548;
+    border-color: #5d4037;
+}
+
+.btn-secondary {
+    background-color: #8d6e63;
+    border-color: #5d4037;
+}
+
+h2 {
+    color: #5d4037;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Notes container styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+input.form-control {
+    background-color: #f7f7f7;
+    border: 1px solid #5d4037;
+}
+
+input.form-control:focus {
+    border-color: #795548;
+    box-shadow: 0 0 0 0.2rem rgba(121, 85, 72, 0.25);
+}
+
+label.form-label {
+    font-family: 'Arial', sans-serif;
+    color: #5d4037;
+}
+
+/* Add some spacing to the rows */
+.row.mt-5 {
+    margin-top: 30px !important;
+}
+
+/* Add a soft shadow to the note items */
+.note-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+}
+/* Navbar background and border */
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.9) !important; /* Light, semi-transparent background */
+    border-bottom: 2px solid #795548; /* Subtle dark brown border for separation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Navbar brand styling */
+.navbar-custom .navbar-brand {
+    color: #5d4037 !important; /* Dark brown color for the brand text */
+    font-family: 'Georgia', serif; /* A classic serif font for an elegant touch */
+    font-weight: bold;
+}
+
+/* Navbar link styling */
+.navbar-custom .nav-link {
+    color: #795548 !important; /* Dark brown color for the nav links */
+}
+
+.navbar-custom .nav-link.active {
+    color: #5d4037 !important; /* Slightly darker on active links */
+}
+
+/* Login/Signup button styling */
+.navbar-custom .btn-primary {
+    background-color: #795548 !important; /* Dark brown background for buttons */
+    border-color: #5d4037 !important; /* Matching border color */
+}
+
+.navbar-custom .btn-primary:hover {
+    background-color: #5d4037 !important; /* Darker brown on hover */
+    border-color: #4e342e !important; /* Darker border on hover */
+}
+
+/* Logout button styling */
+.navbar-custom .btn-danger {
+    background-color: #d32f2f !important; /* Keep the default danger button color */
+    border-color: #b71c1c !important;
+}
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.5) !important; /* More transparent white background */
+    border-bottom: 2px solid rgba(121, 85, 72, 0.5); /* More transparent dark brown border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 20px; /* Space below the navbar */
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0; /* Align to the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+    backdrop-filter: blur(10px); /* Optional: adds * Optional: adds a blur effect to the background behind the navbar */
+}
+
+/* Adjust body margin to prevent content from hiding behind navbar */
+body {
+    margin-top: 56px; /* Adjust this value based on your navbar height */
+}
