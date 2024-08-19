@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom'
 
 
 const Signup = (props) => {
-    const host = "http://localhost:5000";
+    const host = process.env.REACT_APP_HOST;
     let history=useNavigate();
     const [credentials, setCredentials] = useState({ email: "", password: "" ,name:"",cpassword:""});
     const onChange = (e) => {

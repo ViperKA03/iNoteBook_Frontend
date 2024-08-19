@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NoteContext from "./noteContext.js";
 const NoteState = (props) => {
-  const host = "http://localhost:5000";
+  const host = process.env.REACT_APP_HOST;
   const notesInitial = []
 
   //get all nodes
@@ -15,7 +15,7 @@ const NoteState = (props) => {
           "Content-Type": "application/json",
           "auth-token":
             localStorage.getItem('token'),
-        }
+        }    
         
       }
     );
